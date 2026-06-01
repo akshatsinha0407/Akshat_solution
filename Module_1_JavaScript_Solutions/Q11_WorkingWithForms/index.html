@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q11 - Working with Forms</title>
+  <style>
+    .error { color: red; font-size: 0.9em; }
+    input, select { display: block; margin: 8px 0; padding: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Event Registration Form</h1>
+  <form id="registration-form">
+    <label>Name: <input type="text" name="name" /></label>
+    <span class="error" id="name-error"></span>
+    <label>Email: <input type="email" name="email" /></label>
+    <span class="error" id="email-error"></span>
+    <label>Select Event:
+      <select name="event">
+        <option value="">-- Choose --</option>
+        <option value="Music Night">Music Night</option>
+        <option value="Art Workshop">Art Workshop</option>
+        <option value="Food Festival">Food Festival</option>
+      </select>
+    </label>
+    <span class="error" id="event-error"></span>
+    <button type="submit">Register</button>
+  </form>
+  <p id="success-msg"></p>
+  <script src="main.js"></script>
+</body>
+</html>
