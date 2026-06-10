@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 6.1 - Flex Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Responsive navbar using d-flex, flex-column, flex-md-row -->
+<nav class="navbar bg-dark p-3">
+  <div class="container d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3">
+    <a class="navbar-brand text-white fw-bold fs-4" href="#">MyBrand</a>
+    <div class="d-flex flex-column flex-md-row gap-2">
+      <a href="#" class="text-white text-decoration-none px-2">Home</a>
+      <a href="#" class="text-white text-decoration-none px-2">About</a>
+      <a href="#" class="text-white text-decoration-none px-2">Services</a>
+      <a href="#" class="text-white text-decoration-none px-2">Contact</a>
+    </div>
+    <div class="ms-md-auto">
+      <input class="form-control" type="search" placeholder="Search...">
+    </div>
+  </div>
+</nav>
+<div class="container mt-4">
+  <div class="alert alert-info">
+    <strong>Classes used:</strong>
+    <ul class="mb-0">
+      <li><code>d-flex</code> – Enable flexbox</li>
+      <li><code>flex-column</code> – Stack vertically on mobile</li>
+      <li><code>flex-md-row</code> – Switch to horizontal on md+</li>
+    </ul>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

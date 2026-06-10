@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 13.1 - Dashboard with Colors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<nav class="navbar bg-dark text-white px-4 py-3 mb-4">
+  <span class="fw-bold fs-5 text-white">📊 Dashboard</span>
+</nav>
+<div class="container">
+  <!-- Stats Cards -->
+  <div class="row g-4 mb-4">
+    <div class="col-md-3">
+      <div class="card bg-primary text-white text-center p-3 shadow">
+        <h3 class="fw-bold">1,240</h3>
+        <p class="mb-0">Total Users</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-success text-white text-center p-3 shadow">
+        <h3 class="fw-bold">₹82,400</h3>
+        <p class="mb-0">Revenue</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-warning text-dark text-center p-3 shadow">
+        <h3 class="fw-bold">48</h3>
+        <p class="mb-0">Pending Orders</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-danger text-white text-center p-3 shadow">
+        <h3 class="fw-bold">5</h3>
+        <p class="mb-0">Errors</p>
+      </div>
+    </div>
+  </div>
+  <!-- Alerts row -->
+  <div class="row g-3 mb-4">
+    <div class="col-12"><div class="alert alert-info mb-0">ℹ️ <strong>Info:</strong> System update scheduled for Sunday night.</div></div>
+    <div class="col-12"><div class="alert alert-warning mb-0">⚠️ <strong>Warning:</strong> Storage usage is at 85%.</div></div>
+    <div class="col-12"><div class="alert alert-success mb-0">✅ <strong>Success:</strong> Last backup completed successfully.</div></div>
+    <div class="col-12"><div class="alert alert-danger mb-0">❌ <strong>Danger:</strong> 2 services are down. Immediate action required.</div></div>
+  </div>
+  <!-- Text Colors -->
+  <div class="card p-4">
+    <h5>Text Color Classes</h5>
+    <p class="text-primary">text-primary</p>
+    <p class="text-success">text-success</p>
+    <p class="text-danger">text-danger</p>
+    <p class="text-warning">text-warning</p>
+    <p class="text-info">text-info</p>
+    <p class="text-muted">text-muted</p>
+    <p class="text-dark">text-dark</p>
+    <p class="bg-dark text-white d-inline-block px-2">text-white on bg-dark</p>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

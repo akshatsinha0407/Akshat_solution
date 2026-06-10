@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 18.1 - Modal Popup</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+  <h1 class="mb-4">Exercise 18.1 – Modal Popup</h1>
+  <div class="d-flex flex-wrap gap-3">
+    <!-- Basic Modal -->
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basicModal">
+      Open Basic Modal
+    </button>
+    <!-- Confirm Modal -->
+    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmModal">
+      Delete Item
+    </button>
+    <!-- Large Modal -->
+    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#largeModal">
+      Large Modal
+    </button>
+  </div>
+</div>
+
+<!-- Basic Modal -->
+<div class="modal fade" id="basicModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title"><i class="bi bi-info-circle me-2"></i>Basic Modal</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>This is a basic Bootstrap 5 modal triggered by a button click.</p>
+        <p>It uses <code>data-bs-toggle="modal"</code> and <code>data-bs-target="#basicModal"</code>.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Confirm Delete Modal -->
+<div class="modal fade" id="confirmModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-danger">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title"><i class="bi bi-exclamation-triangle me-2"></i>Confirm Delete</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center py-4">
+        <i class="bi bi-trash3 text-danger" style="font-size:3rem"></i>
+        <h5 class="mt-3">Are you sure?</h5>
+        <p class="text-muted">This action cannot be undone. The item will be permanently deleted.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Yes, Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Large Modal -->
+<div class="modal fade" id="largeModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header bg-info text-white">
+        <h5 class="modal-title">Large Scrollable Modal</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h5>modal-lg + modal-dialog-scrollable</h5>
+        <p>This modal is larger and scrollable for long content.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan metus sit amet lorem dignissim.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
