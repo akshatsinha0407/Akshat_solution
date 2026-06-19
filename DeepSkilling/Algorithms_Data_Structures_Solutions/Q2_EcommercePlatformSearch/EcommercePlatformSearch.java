@@ -1,9 +1,9 @@
 // Exercise 2: E-commerce Platform Search Function
-// Demonstrates Linear Search and Binary Search with Big O analysis
+
 
 public class EcommercePlatformSearch {
 
-    // Product class with attributes for searching
+   
     static class Product {
         int productId;
         String productName;
@@ -21,7 +21,7 @@ public class EcommercePlatformSearch {
         }
     }
 
-    // -------------------------------------------------------
+
     // LINEAR SEARCH
     // Time Complexity:
     //   Best Case    : O(1)  - element found at index 0
@@ -37,13 +37,7 @@ public class EcommercePlatformSearch {
         return -1; // not found
     }
 
-    // -------------------------------------------------------
-    // BINARY SEARCH  (array must be sorted by productName)
-    // Time Complexity:
-    //   Best Case    : O(1)  - element found at mid on first check
-    //   Average Case : O(log n)
-    //   Worst Case   : O(log n)
-    // -------------------------------------------------------
+ 
     static int binarySearch(Product[] sortedProducts, String targetName) {
         int low = 0;
         int high = sortedProducts.length - 1;
@@ -126,7 +120,7 @@ public class EcommercePlatformSearch {
         idx = binarySearch(sortedProducts, target);
         System.out.println("Search for '" + target + "': " + (idx != -1 ? "Found at index " + idx : "Not found"));
 
-        // ---- Big O Comparison ----
+       
         System.out.println("\n--- Time Complexity Comparison ---");
         System.out.println("Algorithm       | Best    | Average  | Worst");
         System.out.println("----------------|---------|----------|---------");
