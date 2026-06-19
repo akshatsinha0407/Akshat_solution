@@ -1,5 +1,5 @@
 // Abstract Factory Class - DocumentFactory
-// Declares the factory method that subclasses must implement
+
 
 public abstract class DocumentFactory {
 
