@@ -1,5 +1,5 @@
 // Singleton Pattern - Logger Class
-// Ensures only one instance of Logger exists throughout the application lifecycle
+
 
 public class Logger {
 

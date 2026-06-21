@@ -1,25 +1,10 @@
 // Exercise 7: Financial Forecasting
-// Demonstrates recursive algorithm to predict future values based on past growth rates
-// Also includes memoization optimization to avoid redundant computation
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class FinancialForecasting {
 
-    // -------------------------------------------------------
-    // RECURSIVE APPROACH (plain recursion)
-    // Calculates the future value after 'years' periods,
-    // given an initial principal and an annual growth rate.
-    //
-    // Formula (compound interest / growth):
-    //   futureValue(principal, rate, n) =
-    //       principal                          if n == 0
-    //       futureValue(principal, rate, n-1) * (1 + rate)   otherwise
-    //
-    // Time Complexity : O(n)  – one recursive call per year
-    // Space Complexity: O(n)  – call stack depth equals n
-    // -------------------------------------------------------
     static double futureValueRecursive(double principal, double rate, int years) {
         if (years == 0) {
             return principal; // base case
@@ -27,15 +12,7 @@ public class FinancialForecasting {
         return futureValueRecursive(principal, rate, years - 1) * (1 + rate);
     }
 
-    // -------------------------------------------------------
-    // OPTIMIZED APPROACH — Memoization (Top-Down DP)
-    // Stores already-computed results so sub-problems are not
-    // recalculated.  Useful when the same year's value is
-    // needed multiple times across different queries.
-    //
-    // Time Complexity : O(n)  – each sub-problem computed once
-    // Space Complexity: O(n)  – memo table + call stack
-    // -------------------------------------------------------
+  
     static Map<Integer, Double> memo = new HashMap<>();
 
     static double futureValueMemo(double principal, double rate, int years) {
@@ -47,11 +24,7 @@ public class FinancialForecasting {
         return result;
     }
 
-    // -------------------------------------------------------
-    // ITERATIVE APPROACH (for comparison / reference)
-    // Time Complexity : O(n)
-    // Space Complexity: O(1)  – no stack overhead
-    // -------------------------------------------------------
+   -
     static double futureValueIterative(double principal, double rate, int years) {
         double value = principal;
         for (int i = 0; i < years; i++) {
