@@ -9,14 +9,14 @@
     <packaging>jar</packaging>
 
     <dependencies>
-        <!-- Spring Context (Core + Beans + AOP + Expression) -->
+     
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>5.3.30</version>
         </dependency>
 
-        <!-- Spring AOP -->
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
